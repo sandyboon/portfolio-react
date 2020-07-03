@@ -16,7 +16,7 @@ function Header() {
         </li>
 
         <li>
-          <a rel="skills" href="/skills.html" className="">
+          <a rel="skills" href="/skills" className="">
             <i className="fas fa-cog"></i>
           </a>
         </li>
