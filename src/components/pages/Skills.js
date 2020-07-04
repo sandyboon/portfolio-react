@@ -24,7 +24,7 @@ function Skills() {
         <div className="align-self-center animated bounceInDown delay-3s">
           <div className="ml-md-1 ml-lg-5 bounce fast">
             <div className="skillsBall skillsBall3 shadow-sm animated wobble delay-3s slow">
-              <p>Java Spring</p>
+              <p>React JS</p>
             </div>
           </div>
         </div>
@@ -32,7 +32,7 @@ function Skills() {
         <div className="align-self-center animated bounceInDown delay-4s">
           <div className="ml-md-1 ml-lg-5 bounce slow">
             <div className="skillsBall skillsBall4 shadow-sm animated wobble delay-1s slow">
-              <p>Selenium</p>
+              <p>Jest</p>
             </div>
           </div>
         </div>
@@ -40,7 +40,7 @@ function Skills() {
         <div className="align-self-center animated bounceInDown delay-5s">
           <div className="ml-md-1 ml-lg-5 bounce slow">
             <div className="skillsBall skillsBall5 shadow-sm">
-              <p>Junit</p>
+              <p>Node</p>
             </div>
           </div>
         </div>
@@ -48,7 +48,7 @@ function Skills() {
         <div className="align-self-center animated bounceInDown delay-6s">
           <div className="ml-md-1 ml-lg-5 bounce slow">
             <div className="skillsBall skillsBall6 shadow-sm">
-              <p>SQL</p>
+              <p>MERN</p>
             </div>
           </div>
         </div>
