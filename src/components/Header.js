@@ -26,7 +26,7 @@ function Header() {
           </a>
         </li>
         <li>
-          <a rel="contact" href="contact.html" className="">
+          <a rel="contact" href="/contact" className="">
             <i className="far fa-envelope"></i>
           </a>
         </li>
