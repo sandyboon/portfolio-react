@@ -1,38 +1,299 @@
-.App {
+body {
+  background-color: #f5f3bb /* rgb(29, 29, 29)*/;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #df2935;
+}
+
+hr {
+  border: 1px solid #191716;
+}
+
+.logo img {
+  display: block;
+  margin: 8px auto;
+  width: 24px;
+  height: auto;
+}
+
+/** Side bar styling**/
+.wrapper {
+  display: flex;
+  width: 100%;
+}
+
+/* .navbar-nav {
+  flex-direction: row;
+} */
+
+#sidebar {
+  width: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 999;
+  background: #191716; /* rgb(24, 24, 24);*/
+  color: #fff;
+  transition: all 0.3s;
+}
+
+nav ul li {
+  padding-bottom: 10px;
+}
+
+#contactLinks {
+  bottom: 0;
+  position: fixed;
+}
+
+nav a {
+  font-size: 22px;
+  color: #989788; /* #4d4d4e;*/
+  display: block;
+  line-height: 51px;
+  height: 51px;
+  position: relative;
+  text-decoration: none;
+}
+
+nav a i {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+#mainNavLinks a {
+  margin-right: 17.6px;
+}
+
+#mainNavLinks a:hover i {
+  opacity: 0;
+}
+
+nav a.active,
+nav a:hover {
+  color: #df2935; /*  #08fdd8; Need to change this color*/
+}
+
+#mainNavLinks a:after {
+  content: '';
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  /* margin-left: -15px; */
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+#mainNavLinks li:nth-child(1) a:first-child::after {
+  content: 'HOME';
+  margin-left: -10%;
+}
+
+#mainNavLinks li:nth-child(2) a:first-child::after {
+  content: 'ABOUT';
+  margin-left: -30%;
+}
+
+#mainNavLinks li:nth-child(3) a:first-child::after {
+  content: 'SKILLS';
+  margin-left: -30%;
+}
+
+#mainNavLinks li:nth-child(4) a:first-child::after {
+  content: 'WORK';
+  margin-left: -10%;
+}
+
+#mainNavLinks li:nth-child(5) a:first-child::after {
+  content: 'CONTACT';
+  margin-left: -60%;
+}
+
+#mainNavLinks a:hover:after {
+  opacity: 1;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+  margin-left: 150px;
+  height: 100vh;
+}
+
+#skillContent {
+  margin-left: 100px;
+  height: 100vh;
+}
+
+.skillsBall {
+  /* width: 80px;
+  height: 80px; */
+  /* border: 2px solid #191716; */
+  border-radius: 100%;
+  background: #df2935;
+  color: whitesmoke;
+  font-size: 1rem;
+  margin: 5px;
+}
+
+/* .skillsBall p {
+  padding-top: 29%;
+  text-align: center;
+} */
+
+.skillsBall1 {
+  width: 60px;
+  height: 60px;
+  margin-left: 48px;
+}
+
+.skillsBall1 p:first-of-type {
+  padding-top: 29%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.skillsBall2 {
+  width: 100px;
+  height: 100px;
+  margin-left: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.skillsBall2 p:first-of-type {
+  padding-top: 30%;
+  text-align: center;
+}
+
+.skillsBall3 {
+  width: 120px;
+  height: 120px;
+  margin-left: 0px;
+}
+
+.skillsBall3 p:first-of-type {
+  padding-top: 39%;
+  text-align: center;
+}
+
+.skillsBall4 {
+  width: 100px;
+  height: 100px;
+  margin-left: 30px;
+}
+
+.skillsBall4 p:first-of-type {
+  padding-top: 35%;
+  text-align: center;
+}
+
+.skillsBall5 {
+  width: 60px;
+  height: 60px;
+  margin-left: 30px;
+}
+
+.skillsBall5 p:first-of-type {
+  padding-top: 30%;
+  text-align: center;
+}
+
+.skillsBall6 {
+  width: 80px;
+  height: 80px;
+  margin-left: 5px;
+}
+
+.skillsBall6 p:first-of-type {
+  padding-top: 37%;
+  text-align: center;
+}
+
+/**
+Carousel styling
+**/
+
+#carouselExampleControls a span:first-of-type {
+  color: #df2935;
+  font-size: larger;
+  background-image: none;
+}
+
+.imgBanner {
+  position: absolute;
+  bottom: 30px;
+  width: 300px;
+  height: 50px;
+  z-index: 100;
+  margin-top: 150px;
+  padding: 0px;
+  background-color: rgb(25, 23, 22);
+  color: #989788;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+}
+
+.redText {
+  color: #df2935;
+}
+
+.projectDesc {
+  color: #191716;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contactCardHeader {
+  background-color: #191716;
+  color: #df2935;
+}
+
+.contactCardBody {
+  background-color: #f5f3bb;
+  color: #191716;
+}
+
+.blackText {
+  color: #191716;
+}
+
+.cardoutline {
+  border: 1px solid #191716;
+}
+
+.carousel-caption {
+  color: #df2935;
+}
+
+img.workart:hover {
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+  #content {
+    margin-left: 80px;
+  }
+
+  .skillcontentArea {
+    flex-direction: column-reverse;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 1024px) {
+  #content {
+    margin-left: 80px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .skillcontentArea {
+    flex-direction: column-reverse;
   }
 }

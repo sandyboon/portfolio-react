@@ -21,7 +21,7 @@ function Header() {
           </a>
         </li>
         <li>
-          <a rel="gallery" href="./projects.html" className="">
+          <a rel="gallery" href="/projects" className="">
             <i className="fas fa-briefcase"></i>
           </a>
         </li>
@@ -34,17 +34,29 @@ function Header() {
 
       <ul id="contactLinks" className="list-unstyled">
         <li>
-          <a href="https://www.linkedin.com/in/sandarbh-bhadauria-a223231a2">
+          <a
+            href="https://www.linkedin.com/in/sandarbh-bhadauria-a223231a2"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fab fa-linkedin"></i>
           </a>
         </li>
         <li>
-          <a href="https://github.com/sandyboon">
+          <a
+            href="https://github.com/sandyboon"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fab fa-github"></i>
           </a>
         </li>
         <li>
-          <a href="./assets/Resume.pdf">
+          <a
+            href="./assets/Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fas fa-book"></i>
           </a>
         </li>

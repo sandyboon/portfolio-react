@@ -1,8 +1,9 @@
 import React from 'react';
+import Footer from '../Footer';
 
 function Skills() {
   return (
-    <>
+    <main id="content" className="d-flex">
       <div className="d-flex justify-content-center mr-lg-5 skillcontentArea">
         <div className="align-self-center animated bounceInDown delay-1s">
           <div className="ml-md-1 ml-lg-5 animated bounce slow">
@@ -52,7 +53,8 @@ function Skills() {
           </div>
         </div>
       </div>
-    </>
+      <Footer />
+    </main>
   );
 }
 

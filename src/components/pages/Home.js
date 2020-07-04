@@ -1,8 +1,9 @@
 import React from 'react';
+import Footer from '../Footer';
 
 function Home() {
   return (
-    <>
+    <main id="content" className="d-flex">
       <div className="align-self-center mr-lg-5 contentArea">
         <h1 className="h1">
           <p>Hi! I am Sandy...</p>
@@ -13,7 +14,8 @@ function Home() {
           Front End Developer | Java Developer | Test Automation
         </span>
       </div>
-    </>
+      <Footer />
+    </main>
   );
 }
 
