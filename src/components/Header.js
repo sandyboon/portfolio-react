@@ -1,34 +1,35 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
     <nav id="sidebar" className="d-flex justify-content-center">
       <ul id="mainNavLinks" className="list-unstyled align-self-center ml-auto">
         <li>
-          <a rel="index" href="/" className="">
+          <a rel="index" href="/deployed-react-portfolio/" className="">
             <i className="fas fa-home"></i>
           </a>
         </li>
         <li>
-          <a rel="about" href="/about" className="">
+          <Link to={'/deployed-react-portfolio/about'}>
             <i className="fas fa-user-tie"></i>
-          </a>
+          </Link>
         </li>
 
         <li>
-          <a rel="skills" href="/skills" className="">
+          <Link to={'/deployed-react-portfolio/skills'}>
             <i className="fas fa-cog"></i>
-          </a>
+          </Link>
         </li>
         <li>
-          <a rel="gallery" href="/projects" className="">
+          <Link to={'/deployed-react-portfolio/projects'}>
             <i className="fas fa-briefcase"></i>
-          </a>
+          </Link>
         </li>
         <li>
-          <a rel="contact" href="/contact" className="">
+          <Link to={'/deployed-react-portfolio/contact'}>
             <i className="far fa-envelope"></i>
-          </a>
+          </Link>
         </li>
       </ul>
 

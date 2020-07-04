@@ -14,19 +14,19 @@ function App() {
       <>
         <Header />
         <Switch>
-          <Route exact path={'/'}>
+          <Route exact path={'/deployed-react-portfolio/'}>
             <Home />
           </Route>
-          <Route exact path={'/about'}>
+          <Route exact path={'/deployed-react-portfolio/about'}>
             <About />
           </Route>
-          <Route exact path={'/skills'}>
+          <Route exact path={'/deployed-react-portfolio/skills'}>
             <Skills />
           </Route>
-          <Route exact path={'/projects'}>
+          <Route exact path={'/deployed-react-portfolio/projects'}>
             <Work />
           </Route>
-          <Route exact path={'/contact'}>
+          <Route exact path={'/deployed-react-portfolio/contact'}>
             <Contact />
           </Route>
         </Switch>
